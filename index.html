@@ -1,23 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gamer Landing Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                omor: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
-</head>
-<body>
-</body>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "576px",
+            md: "768px",
+            lg: "992px",
+            xl: "1440px",
+          },
+          extend: {
+            colors: {
+              primary: "#FF42A5",
+            },
+
+            backgroundImage: {
+              "hot-pink":
+                "linear-gradient(90.00deg, rgb(255, 66, 165) 13.134%,rgb(255, 66, 165) 87.942%)",
+              "footer-texture": "url('/img/footer-texture.png')",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .work-sans {
+        font-family: "Work Sans", sans-serif;
+      }
+    </style>
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="work-sans">
+    <header class="shadow-md">
+      <nav class="container mx-auto flex items-center py-11 justify-between">
+        <div class="flex items-center gap-5">
+          <img src="images/logo.png" alt="logo" />
+          <h3 class="font-bold text-[45px]">
+            <span class="text-primary">G</span>amer
+          </h3>
+        </div>
+
+        <ul
+          class="*:text-[#3C354F] *:text-lg *:font-medium flex items-center gap-8 *:cursor-pointer"
+        >
+          <li><a href=""></a>About Us</li>
+          <li><a href="">Developers</a></li>
+          <li
+            class="flex items-center gap-4 py-[18px] px-6 bg-[#0B02231A] rounded-lg"
+          >
+            <span class="mr-2">Follow Us On</span>
+            <img src="images/logo/youtube.svg" alt="" />
+            <img src="images/logo/tiktok.svg" alt="" />
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>
 </html>
