@@ -19,11 +19,17 @@
             colors: {
               primary: "#FF42A5",
             },
+            boxShadow: {
+              nav: " 0px 4px 30px 0px rgba(0, 0, 0, 0.05)",
+            },
 
             backgroundImage: {
               "hot-pink":
                 "linear-gradient(90.00deg, rgb(255, 66, 165) 13.134%,rgb(255, 66, 165) 87.942%)",
               "footer-texture": "url('/img/footer-texture.png')",
+
+              gamer:
+                "linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%)",
             },
           },
         },
@@ -51,8 +57,8 @@
     />
   </head>
   <body class="work-sans">
-    <header class="shadow-md">
-      <nav class="container mx-auto flex items-center py-11 justify-between">
+    <header class="shadow-nav">
+      <nav class="container mx-auto flex items-center py-10 justify-between">
         <div class="flex items-center gap-5">
           <img src="images/logo.png" alt="logo" />
           <h3 class="font-bold text-[45px]">
@@ -69,11 +75,109 @@
             class="flex items-center gap-4 py-[18px] px-6 bg-[#0B02231A] rounded-lg"
           >
             <span class="mr-2">Follow Us On</span>
-            <img src="images/logo/youtube.svg" alt="" />
-            <img src="images/logo/tiktok.svg" alt="" />
+            <img src="images/icon/youtube.svg" alt="" />
+            <img src="images/icon/tiktok.svg" alt="" />
           </li>
         </ul>
       </nav>
     </header>
+    <main>
+      <!-- hero section -->
+      <section
+        class="bg-[url('./images/hero-left.png')] bg-no-repeat bg-left"
+      >
+        <div class="container mx-auto grid grid-cols-2 gap-14 items-center">
+          <div class="">
+            <h3
+              class="text-[0B0223] text-5xl font-semibold uppercase leading-normal"
+            >
+              Play Like The
+            </h3>
+            <h2
+              class="bg-[linear-gradient(180deg,_#F948B2_0%,_#8758F1_100%)] text-[5.9375rem] font-extrabold leading-normal bg-clip-text [-webkit-text-fill-color:transparent]"
+            >
+              G.O.A.T.
+            </h2>
+            <div class="space-y-4">
+              <p
+                class="flex items-center gap-2 text-[#534C64] text-xl font-medium lowercase"
+              >
+                <img src="./images/icon/player.svg" alt="" />
+                1-Click instant play
+              </p>
+              <p
+                class="flex items-center gap-2 text-[#534C64] text-xl font-medium lowercase"
+              >
+                <img src="./images/icon/download.svg" alt="" />
+                No Download
+              </p>
+              <p
+                class="flex items-center gap-2 text-[#534C64] text-xl font-medium lowercase"
+              >
+                <img src="./images/icon/group.svg" alt="" />
+                1000s of supported online games
+              </p>
+            </div>
+
+            <div class="mt-10 space-x-6">
+              <button
+                class="rounded-[48px] bg-[linear-gradient(90deg,_#ff42a5_13.13%,_#ff42a5_87.94%)] leading-normal py-5 px-10 text-white text-lg uppercase font-semibold"
+              >
+                sing in
+              </button>
+              <button
+                class="rounded-[48px] bg-[#4EC5F7] leading-normal py-5 px-10 text-white text-lg uppercase font-semibold"
+              >
+                Go Rogue
+              </button>
+            </div>
+          </div>
+          <div class="">
+            <img src="./images/hero.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- gamer section -->
+      <section class="bg-gamer py-14">
+        <div class="container mx-auto grid grid-cols-2 items-center">
+          <div>
+            <img src="./images/gamer.png" />
+          </div>
+
+          <div>
+            <h3
+              class="text-5xl font-bold bg-[linear-gradient(180deg,_#F948B2_0%,_#8758F1_100%)] bg-clip-text [-webkit-text-fill-color:transparent] text-right"
+            >
+              We are gamer
+            </h3>
+            <p
+              class="text-[#534C64] text-lg leading-8 text-right max-w-[520px] mt-6 ml-auto"
+            >
+              An international digital games and entertainment company. We
+              develop, publish and distribute multiplayer mobile games. We reach
+              over 400 million players each month and our audience keeps
+              growing.
+            </p>
+
+            <button
+              class="rounded-[48px] bg-[linear-gradient(90deg,_#ff42a5_13.13%,_#ff42a5_87.94%)] leading-normal py-5 px-10 text-white text-lg uppercase font-semibold mt-8 block ml-auto"
+            >
+              know more
+            </button>
+
+            <div class="mt-6">
+              <p
+                class="text-[#534C64] text-right text-2xl leading-[45px] font-medium"
+              >
+                Our purpose...
+              </p>
+              <q class="text-[#534C64] text-[32px] font-bold block text-right"
+                >unleash the gamer in everyone</q
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
